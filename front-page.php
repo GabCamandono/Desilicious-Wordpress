@@ -96,7 +96,7 @@
 
           <?php $menu = new WP_Query(array ( 
             'post_type' => 'menus',
-            'posts_per_page' => -1
+            'posts_per_page' => -1,
           ))?>
 
           <?php if($menu->have_posts()) : while($menu->have_posts()) :$menu->the_post() ?>
